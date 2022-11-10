@@ -54,3 +54,21 @@ cd ./samples
 adb install sample.apk
 maestro test android-flow.yaml
 ```
+
+## Solução paliativa para problemas do maestro que ainda não foram corrigidas
+
+[Problem: Run all test files in a folder](https://github.com/mobile-dev-inc/maestro/issues/335)
+
+```
+# package.json
+  "scripts": {
+    "test-android": "maestro test -e NAME_APP=org.wikipedia  ./tests/**/*.yaml"
+  }
+```
+
+```
+# package.json - paliativo
+  "scripts": {
+    "test-android": "for i in tests/onboarding/*.yaml; do maestro test -e NAME_APP=org.wikipedia $i; done"
+  }
+```

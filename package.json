@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "hierarchy": "maestro hierarchy",
-    "test-ios": "maestro test -e NAME_APP=org.wikimedia.wikipedia ./tests/**/*.yaml",
+    "test-ios": "for i in tests/onboarding/*.yaml; do maestro test -e NAME_APP=org.wikimedia.wikipedia $i; done",
     "test-android": "maestro test -e NAME_APP=org.wikipedia  ./tests/**/*.yaml"
   }
 }
