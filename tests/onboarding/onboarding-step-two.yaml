@@ -1,0 +1,20 @@
+appId: ${NAME_APP} 
+---
+- runFlow:
+    file: ../../screens/wp-open-app.yaml
+- tapOn:
+    text: "Next"
+- assertVisible: "New ways to explore"
+- assertVisible: "Explore feed"
+- assertVisible: "Recommended reading and daily articles from our community"
+- assertVisible: "Places tab"
+- assertVisible: "Discover landmarks near you or search for places across the world"
+- assertVisible: "On this day"
+- assertVisible: "Travel back in time to learn what happened today in history"
+- assertVisible:
+    text: "Next"
+    enabled: true
+- assertVisible:
+    text: "Skip"
+    enabled: false
+- stopApp

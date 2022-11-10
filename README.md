@@ -36,6 +36,8 @@ idb_companion --udid {id of the iOS device}
 
 ## Extrair apps exemplo
 
+**Download:** https://storage.googleapis.com/mobile.dev/samples/samples.zip 
+
 ### IOS
 
 ```

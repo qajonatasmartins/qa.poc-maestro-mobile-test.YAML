@@ -1,0 +1,14 @@
+{
+  "name": "qa.poc-maestro-mobile-test.yaml",
+  "version": "1.0.0",
+  "description": "Projeto com framework Maestro (não é baseado em node) para testes mobile IOS e ANDROID",
+  "main": "index.js",
+  "repository": "https://github.com/qajonatasmartins/qa.poc-maestro-mobile-test.YAML.git",
+  "author": "Jonatas <jonatas1503@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "hierarchy": "maestro hierarchy",
+    "test-ios": "maestro test -e NAME_APP=org.wikimedia.wikipedia ./tests/**/*.yaml",
+    "test-android": "maestro test -e NAME_APP=org.wikipedia  ./tests/**/*.yaml"
+  }
+}
