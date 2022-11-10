@@ -2,6 +2,8 @@
 
 POC do framework de testes mobile MAESTRO
 
+Framework desenvolvido em kotlin e shell
+
 ## Instalação
 
 1. Execute `brew tap mobile-dev-inc/tap`
