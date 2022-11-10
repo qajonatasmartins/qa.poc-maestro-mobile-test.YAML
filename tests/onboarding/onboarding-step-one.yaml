@@ -11,4 +11,4 @@ appId: ${NAME_APP}
 - assertVisible:
     text: "Skip"
     enabled: true
-- stopApp
+- stopApp 
