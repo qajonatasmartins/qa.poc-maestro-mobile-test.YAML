@@ -1,7 +1,7 @@
 appId: ${NAME_APP} 
 ---
 - runFlow:
-    file: ../../screens/wp-open-app.yaml
+    file: ../../../screens/wp-open-app.yaml
 - tapOn:
     text: "Next"
 - assertVisible: "New ways to explore"

@@ -2,3 +2,5 @@ __MACOSX
 Wikipedia.app
 sample.apk
 .DS_Store
+**.xml
+**.log

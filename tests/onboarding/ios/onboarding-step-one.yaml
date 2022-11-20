@@ -1,0 +1,14 @@
+appId: ${NAME_APP} 
+---
+- runFlow:
+    file: ../../../screens/wp-open-app.yaml
+- assertVisible: "The free encyclopedia"
+- assertVisible: "Wikipedia is written collaboratively by volunteers and consists of more than 40 million articles in over 300 languages."
+- assertVisible: "Learn more about Wikipedia"
+- assertVisible:
+    text: "Next"
+    enabled: true
+- assertVisible:
+    text: "Skip"
+    enabled: true
+- stopApp 
